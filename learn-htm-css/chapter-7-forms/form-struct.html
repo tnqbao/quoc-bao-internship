@@ -1,0 +1,131 @@
+<html>
+<head>
+    <title>Chapter 7- Forms</title>
+</head>
+<body>
+<!-- Basic form with text, email, and password fields -->
+<h2>Form Structure</h2>
+<form action="/submit" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<hr />
+
+
+<!-- Text area example -->
+<h2>Text Area</h2>
+<form action="/submit" method="post">
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<hr />
+
+<!-- Checkbox example -->
+<h2>Checkboxes</h2>
+<form action="/submit" method="post">
+    <label for="subscribe">Subscribe to newsletter:</label>
+    <input type="checkbox" id="subscribe" name="subscribe"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<hr />
+
+<!-- Radio buttons example -->
+<h2>Radio Buttons</h2>
+<form action="/submit" method="post">
+    <label for="checked">Checked:</label>
+    <input type="radio" id="checked" name="status" value="checked"><br>
+    <label for="unchecked">Unchecked:</label>
+    <input type="radio" id="unchecked" name="status" value="unchecked"><br><br>
+    <input type="submit" value="Submit">
+</form>
+<hr />
+
+<!-- Dropdown menu example -->
+<h2>Dropdown Menu</h2>
+<form action="/submit" method="post">
+    <label for="options">Choose an option:</label>
+    <select id="options" name="options">
+        <option value="option1">Option 1</option>
+        <option value="option2">Option 2</option>
+        <option value="option3">Option 3</option>
+    </select><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<hr />
+
+<!-- File upload example -->
+<h2>File Upload</h2>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="file">Choose a file:</label>
+    <input type="file" id="file" name="file"><br><br>
+
+    <input type="submit" value="Upload">
+</form>
+<hr />
+
+<!-- Button example -->
+<h2>Button</h2>
+<form action="/action" method="post">
+    <button type="submit">Click Me!</button>
+</form>
+<hr />
+
+<!-- Image button example -->
+<h2> Image button</h2>
+<form action="/action" method="post">
+    <input type="image" src="https://via.placeholder.com/150" alt="Submit" style="width:150px;height:150px;">
+</form>
+<hr />
+
+<!-- Reset button example -->
+<h2>Reset Button</h2>
+<form action="/reset" method="post">
+    <input type="reset" value="Reset Form">
+</form>
+<hr />
+
+<!-- Hidden input example -->
+<h2>Hidden Input</h2>
+<form action="/hidden" method="post">
+    <input type="hidden" name="hiddenField" value="hiddenValue">
+    <input type="submit" value="Submit Hidden Field">
+</form>
+<hr />
+
+<!-- Grouping form elements using fieldset and legend -->
+<h2> Grouping form element</h2>
+<form action="/group" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstName">First Name:</label><br>
+        <input type="text" id="firstName" name="firstName"><br><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input type="text" id="lastName" name="lastName"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Contact Information</legend>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
+
+        <label for="address">Address:</label><br>
+        <input type="text" id="address" name="address"><br><br>
+    </fieldset>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
