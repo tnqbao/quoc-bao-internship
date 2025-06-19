@@ -1,0 +1,86 @@
+/*<section>*/
+/*<h2> Example Color Specifics </h2>*/
+/*<p> This is red color </p>*/
+/*<p> This is orange color </p>*/
+/*<p> This is yellow color </p>*/
+/*<p> This is green color </p>*/
+/*<p> This is blue color </p>*/
+/*<p> This is indigo color </p>*/
+/*<p> This is violet color </p>*/
+/*<p> This is pink color </p>*/
+/*<p> This is brown color </p>*/
+/*</section>*/
+
+section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+p.zero {
+    color: red;
+}
+
+p.one {
+    color: orange;
+}
+
+p.two {
+    color: yellow;
+    background-color: black; /* use background bc it is hard visible */
+}
+
+p.three {
+    color: green;
+}
+
+p.four {
+    color: #0000ff; /* use hex */
+}
+
+p.five {
+    color: indigo;
+}
+
+p.six {
+    color: violet;
+    background-color: #f0f0f0;
+}
+
+p.seven {
+    color: pink;
+}
+
+p.eight {
+    color: brown;
+}
+
+p.nine {
+    color: rgba(0, 0, 0); /* use rgba */
+}
+
+p.ten {
+    color: white;
+    background-color: black; /* use background bc it is not visible */
+}
+
+p.opacity-zero {
+    color: rgba(0, 0, 0, 0); /* fully transparent */
+}
+
+p.opacity-half {
+    color: rgba(0, 0, 0, 0.5); /* half transparent */
+}
+
+p.opacity-full {
+    color: rgba(0, 0, 0, 1); /* fully opaque */
+}
+
+p.hsl {
+    color: hsl(120, 100%, 50%); /* green */
+}
+
+p.hsla {
+    color: hsla(240, 100%, 50%, 0.5); /* semi blue */
+}
