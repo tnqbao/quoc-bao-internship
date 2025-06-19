@@ -1,0 +1,62 @@
+section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+p.font-serif {
+    font-family: serif;
+}
+
+p.font-sans-serif {
+    font-family: sans-serif;
+}
+
+p.font-monospace {
+    font-family: monospace;
+}
+
+p.font-size-12 {
+    font-size: 12px;
+}
+
+p.font-size-16 {
+    font-size: 16px;
+}
+
+p.font-size-20 {
+    font-size: 20px;
+}
+
+p.font-family-arial {
+    font-family: Arial, sans-serif;
+}
+
+p.font-family-verdana {
+    font-family: Verdana, sans-serif;
+}
+
+p.text-align-left {
+    text-align: left;
+}
+
+p.text-align-center {
+    text-align: center;
+}
+
+p.text-align-right {
+    text-align: right;
+}
+
+p.vertical-align-top {
+    vertical-align: top;
+}
+
+p.vertical-align-middle {
+    vertical-align: middle;
+}
+
+p.vertical-align-bottom {
+    vertical-align: bottom;
+}
