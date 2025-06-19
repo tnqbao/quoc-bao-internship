@@ -1,0 +1,55 @@
+<!DOCtype html>
+<html lang="en">
+<head>
+    <title>Chapter 7 - HTML5 Form</title>
+</head>
+<body>
+<!-- form validation -->
+<h2> Form validation</h2>
+<form action="/submit" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" minlength="6" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<hr />
+
+<!-- Date input -->
+<h2>Date Input</h2>
+<form action="/submit" method="post">
+    <label for="date">Select a date:</label><br>
+    <input type="date" id="date" name="date"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<hr />
+
+<!-- Email & url input -->
+<h2>Email and URL Input</h2>
+<form action="/submit" method="post">
+    <label for="email2">Email:</label><br>
+    <input type="email" id="email2" name="mail" required><br><br>
+
+    <label for="website">Website:</label><br>
+    <input type="url" id="website" name="website"><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<hr />
+
+<!-- search input -->
+<h2>Search Input</h2>
+<form action="/search" method="get">
+    <label for="search">Search:</label><br>
+    <input type="search" id="search" name="search" placeholder="Search..."><br><br>
+
+    <input type="submit" value="Search">
+</form>
+</body>
+</html>
