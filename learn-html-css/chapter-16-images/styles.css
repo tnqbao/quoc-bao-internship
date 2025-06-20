@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #555555;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+/* Image Controls */
+.control-image-size > img {
+    margin-left: 50px;
+}
+.image-size-small {
+    width: 100px;
+    height: 100px;
+}
+
+.image-size-medium {
+    width: 200px;
+    height: 200px;
+}
+
+.image-size-large {
+    width: 300px;
+    height: 300px;
+}
+
+/*Image Background*/
+.background-image-text {
+    color : #e0e0e0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    font-size: xxx-large;
+    padding-top: 400px;
+    background-image: url('https://cdn.daudoo.com/example.jpg');
+    background-size: cover;
+    height:300px;
+}
+
+/* Sprite Image */
+.sprite-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.sprite-icon {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://cdn.daudoo.com/default_image.jpg');
+    background-size: 150px 50px;
+}
+
+.sprite-icon-2 {
+    background-position: -50px 0;
+}
+
+.sprite-icon-3 {
+    background-position: -100px 0;
+}
