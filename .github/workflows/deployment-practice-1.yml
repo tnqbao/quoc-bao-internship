@@ -3,7 +3,7 @@ name: deploy-ci-cd
 on:
   push:
     branches:
-      - master
+      - feat/practice-1
 
 jobs:
   build:
@@ -31,5 +31,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd ~/work/quoc-bao-internship
-            git pull origin master
-            git checkout master
+            git pull origin feat/practice-1
+            git checkout feat/practice-1
