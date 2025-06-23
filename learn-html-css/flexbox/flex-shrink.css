@@ -1,0 +1,43 @@
+.shrink {
+    border: 1px solid black;
+    background-color: #f1ffb3;
+    border-radius: 8px;
+    margin: 20px;
+    display: flex;
+}
+
+.shrink > p {
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    flex-basis: 40%;
+}
+
+.shrink > .item-1 {
+    background-color: red;
+}
+
+.shrink > .target {
+    background-color: green;
+}
+
+.shrink > .item-3 {
+    background-color: blue;
+}
+
+.shrink > .item-4 {
+    background-color: yellow;
+}
+
+.shrink-0 > .target {
+    flex-shrink: 0;
+}
+
+.shrink-1 > .target {
+    flex-shrink: 1;
+}
+
+.shrink-2 > .target {
+    flex-shrink: 2;
+}
