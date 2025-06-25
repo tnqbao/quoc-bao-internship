@@ -1,0 +1,11 @@
+.logo {
+    gap: 1rem;
+}
+
+.logo > p {
+    font-size: var(--font-size-title-small);
+    font-weight: 600;
+    color: var(--color-primary);
+    margin: 0;
+    align-self: center;
+}
