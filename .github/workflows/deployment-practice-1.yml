@@ -3,7 +3,7 @@ name: deploy-ci-cd
 on:
   push:
     branches:
-      - feat/practice-1
+      - feature/practice-1
 
 jobs:
   build:
