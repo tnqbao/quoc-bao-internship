@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./assets/css/components/navbar.css">
     <link rel="stylesheet" href="./assets/css/components/logo.css">
     <link rel="stylesheet" href="./assets/css/components/hero.css">
+    <link rel="stylesheet" href="./assets/css/components/text-content.css">
+    <link rel="stylesheet" href="./assets/css/components/partner.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -40,9 +42,37 @@
     </div>
 </header>
 <main>
-    <section class="hero flex-center">
+    <section class="hero flex-center container">
+        <section class="hero-content text-content flex-column">
+            <button class="explore-btn flex-center"> Explore the world! <img src="./assets/img/bag.svg" alt="hero icon"
+                                                                             class="hero-icon"/></button>
+            <h1>
+                Travel <span class="highlight-pink">top</span><br/>
+                <span class="highlight-pink">destination</span> of the world
+            </h1>
+            <p> We always make our customer happy by providing
+                as many choices as possible </p>
+            <div class="hero-btns flex">
+                <button class="flex-center">
+                    Get Started
+                </button>
+                <button class="btn-secondary flex-center">
+                    <img src="./assets/img/play.svg" alt="play icon" class="play-icon"/>
+                    Watch Demo
+                </button>
+            </div>
+        </section>
+        <section class="hero-image">
+            <img src="./assets/img/hero-image.svg" alt="hero image"/>
+        </section>
     </section>
-    <section class="partner"></section>
+    <section class="partner container flex">
+            <img src="./assets/img/partner-1.svg" alt="partner logo 1"/>
+            <img src="./assets/img/partner-2.svg" alt="partner logo 2"/>
+            <img src="./assets/img/partner-3.svg" alt="partner logo 3"/>
+            <img src="./assets/img/partner-4.svg" alt="partner logo 4"/>
+            <img src="./assets/img/partner-5.svg" alt="partner logo 5"/>
+    </section>
     <section class="services"></section>
     <section class="top-destination"></section>
     <section class="travel-point"></section>

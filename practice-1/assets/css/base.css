@@ -35,7 +35,18 @@ body {
 
 button {
     background: var(--bg-primary);
+    font-weight: var(--font-weight-title);
     color: var(--color-fifty);
     cursor: pointer;
     border: none;
+    padding: 1rem 2rem;
+    border-radius: 40px;
 }
+
+.btn-secondary {
+    background: var(--bg-secondary);
+    color: var(--color-primary);
+    font-weight: var(--font-weight-title);
+}
+
+

@@ -1,0 +1,38 @@
+.hero {
+    width: 1184px;
+}
+
+.hero h1 {
+    font-size: var(--font-size-title-biggest);
+    font-weight: var(--font-weight-title);
+    color: var(--color-primary);
+    line-height: 1.2;
+    max-width: 700px;
+    word-break: break-word;
+}
+
+.hero .highlight-pink {
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-title);
+}
+
+.hero-content {
+    flex-basis: 40%;
+    text-wrap: auto;
+    align-items: flex-start;
+}
+
+.hero-content .explore-btn {
+    color : var(--color-secondary);
+    background-color: var(--color-fifty);
+    padding: 1rem 2rem;
+    gap: 1rem;
+}
+
+.hero-image {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
