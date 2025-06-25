@@ -31,5 +31,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd ~/work/quoc-bao-internship
-            git pull origin feat/practice-1
-            git checkout feat/practice-1
+            git pull origin feature/practice-1
+            git checkout feature/practice-1
