@@ -3,7 +3,7 @@
 }
 
 .logo > p {
-    font-size: var(--font-size-title-small);
+    font-size: var(--font-size-title-sm);
     font-weight: 600;
     color: var(--color-primary);
     margin: 0;

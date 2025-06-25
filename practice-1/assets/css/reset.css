@@ -9,8 +9,9 @@ html {
 }
 
 body {
-    line-height: 1.6em;
-    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-family-primary), serif;
+    color: var(--color-primary);
+    background-color: var(--bg-secondary);
 }
 
 img {

@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="./assets/css/components/navbar.css">
     <link rel="stylesheet" href="./assets/css/components/logo.css">
     <link rel="stylesheet" href="./assets/css/components/hero.css">
-    <link rel="stylesheet" href="./assets/css/components/text-content.css">
+    <link rel="stylesheet" href="assets/css/components/section-content.css">
     <link rel="stylesheet" href="./assets/css/components/partner.css">
+    <link rel="stylesheet" href="./assets/css/components/services.css">
+    <link rel="stylesheet" href="./assets/css/components/card.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -42,8 +44,8 @@
     </div>
 </header>
 <main>
-    <section class="hero flex-center container">
-        <section class="hero-content text-content flex-column">
+    <section class="hero container">
+        <section class="hero-content section-content">
             <button class="explore-btn flex-center"> Explore the world! <img src="./assets/img/bag.svg" alt="hero icon"
                                                                              class="hero-icon"/></button>
             <h1>
@@ -52,7 +54,7 @@
             </h1>
             <p> We always make our customer happy by providing
                 as many choices as possible </p>
-            <div class="hero-btns flex">
+            <div class="hero-btns">
                 <button class="flex-center">
                     Get Started
                 </button>
@@ -66,14 +68,36 @@
 <!--            <img src="./assets/img/hero-image.svg" alt="hero image"/>-->
         </section>
     </section>
-    <section class="partner container flex">
+    <section class="partner container">
             <img src="./assets/img/partner-1.svg" alt="partner logo 1"/>
             <img src="./assets/img/partner-2.svg" alt="partner logo 2"/>
             <img src="./assets/img/partner-3.svg" alt="partner logo 3"/>
             <img src="./assets/img/partner-4.svg" alt="partner logo 4"/>
             <img src="./assets/img/partner-5.svg" alt="partner logo 5"/>
     </section>
-    <section class="services"></section>
+    <section class="services container">
+        <section class="section-content services-content">
+            <span class="section-title"> Services </span>
+            <h3> Our top value categories for you </h3>
+        </section>
+        <section class="services-cards flex">
+            <div class="card">
+                <img src="./assets/img/service-destination.svg" alt="service image 1"/>
+                <h5> Best Tour Guide </h5>
+                <p> What looked like a small patch of purple grass, above five feet. </p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/service-booking.svg" alt="service image 2"/>
+                <h5> Easy Booking </h5>
+                <p> Square, was moving across the sand in their direction. </p>
+            </div>
+            <div class="card">
+                <img src="./assets/img/service-cloudy.png" alt="service image 3"/>
+                <h5> Weather Forecast </h5>
+                <p> What looked like a small patch of purple grass, above five feet. </p>
+            </div>
+        </section>
+    </section>
     <section class="top-destination"></section>
     <section class="travel-point"></section>
     <section class="key-features"></section>
