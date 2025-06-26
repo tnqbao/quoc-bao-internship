@@ -25,12 +25,6 @@
     color: var(--color-primary);
 }
 
-.navbar .btn-login {
-    background-color: transparent;
-    color: var(--color-primary);
-    font-weight: var(--font-weight-title);
-}
-
-.navbar .btn-signup {
-    font-weight: var(--font-weight-description);
+.navbar .btn-secondary {
+    border: none;
 }

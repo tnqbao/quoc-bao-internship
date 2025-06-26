@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title> Practice 1 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/reset.css">
@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./assets/css/components/partner.css">
     <link rel="stylesheet" href="./assets/css/components/services.css">
     <link rel="stylesheet" href="./assets/css/components/card.css">
+    <link rel="stylesheet" href="./assets/css/components/top-destination.css">
+    <link rel="stylesheet" href="./assets/css/components/button.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -31,16 +33,16 @@
                 <a href="#"> Discover </a>
             </li>
             <li>
-                <a href="#"> Special Deals </a>
+                <a href="#top-destination"> Special Deals </a>
             </li>
             <li>
                 <a href="#"> Contact </a>
             </li>
         </ul>
     </nav>
-    <div>
-        <button class="btn-login">Login</button>
-        <button class="btn-signup">Sign Up</button>
+    <div class="pair-btn">
+        <button class="btn-secondary">Login</button>
+        <button>Sign Up</button>
     </div>
 </header>
 <main>
@@ -54,7 +56,7 @@
             </h1>
             <p> We always make our customer happy by providing
                 as many choices as possible </p>
-            <div class="hero-btns">
+            <div class="pair-btn">
                 <button class="flex-center">
                     Get Started
                 </button>
@@ -64,16 +66,22 @@
                 </button>
             </div>
         </section>
-        <section class="hero-image">
-<!--            <img src="./assets/img/hero-image.svg" alt="hero image"/>-->
+        <section class="hero-images">
+            <div class="gallery flex">
+                <div class="left">
+                    <img src="./assets/img/hero-image-top.jpg" alt="hero image 1"/>
+                    <img src="./assets/img/hero-image-bottom.jpg" alt="hero image 2"/>
+                </div>
+                <img class="right" src="./assets/img/hero-image-right.jpg" alt="hero image 1"/>
+            </div>
         </section>
     </section>
     <section class="partner container">
-            <img src="./assets/img/partner-1.svg" alt="partner logo 1"/>
-            <img src="./assets/img/partner-2.svg" alt="partner logo 2"/>
-            <img src="./assets/img/partner-3.svg" alt="partner logo 3"/>
-            <img src="./assets/img/partner-4.svg" alt="partner logo 4"/>
-            <img src="./assets/img/partner-5.svg" alt="partner logo 5"/>
+        <a href="https://www.tripadvisor.com/"><img src="./assets/img/partner-1.svg" alt="tripadvisor logo"/></a>
+        <a href="https://www.expedia.com.vn/"><img src="./assets/img/partner-2.svg" alt="partner logo 2"/></a>
+        <a href="https://www.booking.com/"><img src="./assets/img/partner-3.svg" alt="booking logo"/></a>
+        <a href="https://www.airbnb.com/"><img src="./assets/img/partner-4.svg" alt="airbnb logo"/></a>
+        <a href="https://www.orbitz.com/"><img src="./assets/img/partner-5.svg" alt="orbitz logo"/></a>
     </section>
     <section class="services container">
         <section class="section-content services-content">
@@ -98,7 +106,53 @@
             </div>
         </section>
     </section>
-    <section class="top-destination"></section>
+    <section class="top-destination container" id="top-destination">
+        <div class="section-content">
+            <span class="section-title"> Top Destination </span>
+            <h3> Explore top destination </h3>
+        </div>
+        <div class="pair-btn">
+            <button class="btn-secondary navigation-btn flex-center">
+                <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
+            </button>
+            <button class="navigation-btn flex-center">
+                <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
+            </button>
+        </div>
+        <section class="top-destination-cards flex">
+            <div class="card">
+                <img src="./assets/img/top-destination-1.jpg" alt="top destination image 1"/>
+                <section class="top-des-info flex">
+                    <div class="top-des-description">
+                        <h6> Paradise Beach, Bantayan Island </h6>
+                        <p> Rome, Italy </p>
+                    </div>
+                    <h6 class="price">$550.16</h6>
+                    <h6 class="rating"> 4.8 ★</h6>
+                </section>
+            </div>
+            <div class="card">
+                <img src="./assets/img/top-destination-2.jpg" alt="top destination image 2"/>                <section class="top-des-info flex">
+                    <div class="top-des-description">
+                        <h6> Ocean with full of Colors </h6>
+                        <p> Maldives </p>
+                    </div>
+                    <h6 class="price">$20.99</h6>
+                    <h6 class="rating"> 4.5 ★</h6>
+                </section>
+            </div>
+            <div class="card">
+                <img src="./assets/img/top-destination-3.jpg" alt="top destination image 3"/>                <section class="top-des-info flex">
+                    <div class="top-des-description">
+                        <h6> Mountain View, Above the cloud </h6>
+                        <p> United Arab Emeries </p>
+                    </div>
+                    <h6 class="price">$150.99</h6>
+                    <h6 class="rating"> 5 ★</h6>
+                </section>
+            </div>
+        </section>
+    </section>
     <section class="travel-point"></section>
     <section class="key-features"></section>
     <section class="testimonials"></section>

@@ -1,3 +1,9 @@
 .partner {
     justify-content: space-between;
 }
+
+.partner img:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    cursor: pointer;
+}

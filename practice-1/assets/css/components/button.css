@@ -1,0 +1,19 @@
+/*#login-btn {*/
+
+/*}*/
+
+/*#register-btn {*/
+
+/*}*/
+
+.navigation-btn {
+    border: 0.5px solid var(--color-fourty);
+    border-radius: 6.25rem;
+    padding: 1.25rem 1.25rem;
+}
+
+.pair-btn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

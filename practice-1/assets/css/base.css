@@ -30,6 +30,7 @@
     --line-height-header: 1.2em;
     --line-height-text: 1.6em;
 
+    --color-shadow : rgba(0, 0, 0, 0.1);
 }
 
 body {
@@ -54,6 +55,12 @@ button {
     font-size: var(--font-size-text-md);
     font-weight: var(--font-weight-title);
     border: 0.5px solid var(--color-fourty);
+}
+
+button:hover {
+    box-shadow: 0 2rem 0.5rem var(--color-shadow);
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -92,7 +99,7 @@ h5 {
 h6 {
     font-size: var(--font-size-title-xs);
     font-weight: var(--font-weight-title);
-    color: var(--color-fourty);
+    color: var(--color-primary);
     margin: 0;
 }
 
@@ -102,6 +109,11 @@ p {
     color: var(--color-fourty);
     line-height: var(--line-height-text);
     margin: 1rem 0;
+}
+
+span {
+    font-weight: var(--font-weight-title);
+    color: var(--color-secondary);
 }
 
 section {

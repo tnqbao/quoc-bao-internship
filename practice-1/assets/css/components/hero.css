@@ -1,5 +1,5 @@
 .hero {
-    width: 1184px;
+    justify-content: space-between;
 }
 
 .hero h1 {
@@ -13,7 +13,7 @@
 }
 
 .hero-content {
-    flex-basis: 35%;
+    flex-basis: 30%;
     text-wrap: auto;
 }
 
@@ -24,12 +24,44 @@
     gap: 1rem;
 }
 
-.hero-image {
-    flex-basis: 65%;
+.hero-images {
+    flex-basis: 60%;
+    align-items: center;
+    background-image: url("../../img/hero-background.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
 }
 
-.hero-btns {
-    display: flex;
-    gap: 0.5rem;
+.hero-images .gallery {
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
 }
+
+.hero-images img {
+    width: 272px;
+    height: auto;
+    border-radius: 2rem;
+}
+
+.gallery img {
+    width: 272px;
+    height: 300px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.right {
+    height: 400px !important;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
 

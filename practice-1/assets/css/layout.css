@@ -24,6 +24,7 @@
 .flex-column {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .grid-3 {
