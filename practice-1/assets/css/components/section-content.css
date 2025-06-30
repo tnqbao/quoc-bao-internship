@@ -6,9 +6,10 @@
 }
 
 .section-content .section-title {
-    font-size: 2rem;
+    font-size: var(--font-size-title-xs);
     font-weight: var(--font-weight-title);
     color: var(--color-secondary);
     margin-bottom: 1rem;
     text-wrap : wrap;
+    text-transform: uppercase;
 }

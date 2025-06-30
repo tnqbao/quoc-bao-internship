@@ -76,7 +76,7 @@ h1 {
 
 h2 {
     font-size: var(--font-size-title-xl);
-    color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 h3 {

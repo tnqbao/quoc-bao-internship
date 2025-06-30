@@ -6,7 +6,7 @@
 
 .top-destination-cards {
     width: 100%;
-    gap: 5rem;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
 }
@@ -38,19 +38,18 @@
     flex-wrap: wrap;
 }
 
-.top-destination-cards .card .top-des-description {
-    flex-basis: 50%;
+.top-destination-cards .top-des-description {
+    flex-basis: 55%;
     text-align: start;
 }
 
-
 .price {
     color: var(--color-secondary) !important;
-    flex-basis: 40%;
+    flex-basis: 30%;
 }
 
 .rating {
     color: #FF5722;
     text-align: start;
-    justify-content: flex-end ;
+    justify-content: flex-end;
 }
