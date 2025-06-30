@@ -1,0 +1,51 @@
+.key-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.key-features .section-content {
+    flex: 2;
+}
+
+.key-features > img {
+    flex: 3;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.features-list {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    top: 2rem;
+    left: 2rem;
+
+}
+
+.icon img {
+    width: 40px;
+    height: 32px;
+}
+
+

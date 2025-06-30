@@ -1,0 +1,21 @@
+.services {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services .services-content {
+    flex-basis: 30%;
+    text-wrap: auto;
+}
+
+
+.services .services-cards {
+    flex-basis: 65%;
+    gap : 1.5rem;
+}
+
+.services .card img {
+    width: 4rem;
+    height: auto;
+    border-radius: 1rem;
+}
