@@ -1,16 +1,39 @@
 .navigation-btn {
     display: flex;
-    border: 0.5px solid var(--color-fourty);
+    border: .5px solid var(--color-fourty);
     border-radius: 6.25rem;
     padding: 1.25rem 1.25rem;
     width: 100px;
     height: 100px;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .pair-btn {
     display: flex;
     align-items: center;
     gap: 1rem;
+    justify-content: space-between;
 }
+
+.pair-btn button {
+    width: 4rem;
+    height: 4rem;
+}
+
+.secondary-btn {
+    background: var(--bg-secondary);
+    color: var(--color-primary);
+    font-size: var(--font-size-text-md);
+    font-weight: var(--font-weight-title);
+}
+
+.menu-toggle-btn {
+    display: block;
+    padding: 0 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 25%;
+    margin: .5rem
+}
+

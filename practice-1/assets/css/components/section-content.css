@@ -1,15 +1,14 @@
 .section-content {
-    text-align: left;
+    text-align: center;
     flex-direction: column;
     align-items: flex-start;
-    gap: 2rem;
 }
 
 .section-content .section-title {
-    font-size: var(--font-size-title-xs);
+    font-size: var(--font-size-text-sm);
     font-weight: var(--font-weight-title);
     color: var(--color-secondary);
     margin-bottom: 1rem;
-    text-wrap : wrap;
-    text-transform: uppercase;
+    text-wrap: wrap;
+    text-transform: uppercase
 }

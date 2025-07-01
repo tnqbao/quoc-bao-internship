@@ -2,14 +2,12 @@
     --bg-primary: #5D50C6;
     --bg-secondary: #FFFFFF;
     --bg-third: #FACD4914;
-
     --color-primary: #222831;
     --color-secondary: #F85E9F;
     --color-third: #FF5722;
     --color-fourty: #19182580;
     --color-fifty: #FFFFFF;
-    --color-border : #1918251A;
-
+    --color-border: #1918251A;
     --font-family-primary: 'Circular Std', sans-serif;
     --font-family-secondary: 'Inter', sans-serif;
 
@@ -22,22 +20,20 @@
 
     --font-size-text-lg: 23px;
     --font-size-text-md: 18px;
-    --font-size-text-sm: 14px;
+    --font-size-text-sm: 16px;
 
     --font-weight-title: 700;
     --font-weight-description: 400;
-
     --line-height-header: 1.2em;
     --line-height-text: 1.6em;
-
-    --color-shadow : rgba(0, 0, 0, 0.1);
+    --color-shadow: rgba(0, 0, 0, 0.1);
 }
+
 
 body {
     font-family: var(--font-family-primary), serif;
     color: var(--color-primary);
-    background-color: var(--bg-secondary);
-
+    background-color: var(--bg-secondary)
 }
 
 button {
@@ -46,86 +42,95 @@ button {
     color: var(--color-fifty);
     cursor: pointer;
     border: none;
-    padding: 1rem 2rem;
-    border-radius: 40px;
-}
-
-.btn-secondary {
-    background: var(--bg-secondary);
-    color: var(--color-primary);
-    font-size: var(--font-size-text-md);
-    font-weight: var(--font-weight-title);
-    border: 0.5px solid var(--color-fourty);
+    padding: 1rem 1rem;
+    border-radius: 40px
 }
 
 button:hover {
-    box-shadow: 0 2rem 0.5rem var(--color-shadow);
+    box-shadow: 0 2rem .5rem var(--color-shadow);
     transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
+    transition: transform .2s ease-in-out
 }
 
 h1, h2, h3, h4, h5, h6 {
     line-height: var(--line-height-header);
-    font-weight: var(--font-weight-title);
+    font-weight: var(--font-weight-title)
 }
 
 h1 {
-    font-size: var(--font-size-title-xxl);
-    color: var(--color-primary);
+    font-size: var(--font-size-title-lg);
+    color: var(--color-primary)
 }
 
 h2 {
     font-size: var(--font-size-title-xl);
-    color: var(--color-primary);
+    color: var(--color-primary)
 }
 
 h3 {
-    font-size: var(--font-size-title-lg);
-    color: var(--color-primary);
+    font-size: var(--font-size-title-md);
+    color: var(--color-primary)
 }
-
 
 h4 {
     font-size: var(--font-size-title-md);
-    color: var(--color-third);
+    color: var(--color-third)
 }
 
 h5 {
     font-size: var(--font-size-title-sm);
     font-weight: var(--font-weight-title);
     color: var(--color-primary);
-    margin: 0;
+    margin: 0
 }
 
 h6 {
     font-size: var(--font-size-title-xs);
     font-weight: var(--font-weight-title);
     color: var(--color-primary);
-    margin: 0;
+    margin: 0
 }
 
 p {
-    font-size: var(--font-size-text-md);
+    font-size: var(--font-size-text-sm);
     font-weight: var(--font-weight-description);
     color: var(--color-fourty);
     line-height: var(--line-height-text);
-    margin: 1rem 0;
+    margin: 1rem 0
 }
 
 span {
     font-weight: var(--font-weight-title);
-    color: var(--color-secondary);
-}
-
-section {
-    padding: 4rem 0;
+    color: var(--color-secondary)
 }
 
 ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
+section {
+    gap: 2rem;
+}
 
+.gap-1 {
+    gap: 1rem
+}
+
+.gap-2 {
+    gap: 2rem
+}
+
+.gap-3 {
+    gap: 3rem
+}
+
+.gap-4 {
+    gap: 4rem
+}
+
+.gap-6 {
+    gap: 6rem
+}
 

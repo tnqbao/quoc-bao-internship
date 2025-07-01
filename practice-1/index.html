@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/components/navbar.css">
     <link rel="stylesheet" href="./assets/css/components/logo.css">
+    <link rel="stylesheet" href="./assets/css/components/button.css">
     <link rel="stylesheet" href="./assets/css/components/hero.css">
     <link rel="stylesheet" href="assets/css/components/section-content.css">
     <link rel="stylesheet" href="./assets/css/components/partner.css">
     <link rel="stylesheet" href="./assets/css/components/services.css">
     <link rel="stylesheet" href="./assets/css/components/card.css">
-    <link rel="stylesheet" href="./assets/css/components/button.css">
     <link rel="stylesheet" href="./assets/css/components/top-destination.css">
     <link rel="stylesheet" href="./assets/css/components/travel-point.css">
     <link rel="stylesheet" href="./assets/css/components/key-features.css">
@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-<header class="navbar container flex">
+<header class="navbar flex">
     <div class="logo flex">
         <img src="./assets/img/logo.svg" alt="logo image"/>
         <p> Travlog </p>
@@ -35,42 +35,28 @@
                 <a href="#" class="active"> Home </a>
             </li>
             <li>
-                <a href="#"> Discover </a>
+                <a href="#services"> Discover </a>
             </li>
             <li>
                 <a href="#top-destination"> Special Deals </a>
             </li>
             <li>
-                <a href="#"> Contact </a>
+                <a href="#footer"> Contact </a>
             </li>
         </ul>
     </nav>
     <div class="pair-btn">
-        <button class="btn-secondary">Login</button>
+        <button class="secondary-btn">Login</button>
         <button>Sign Up</button>
+    </div>
+    <div class="menu-button">
+        <button class="menu-toggle-btn flex-center">
+            <img src="./assets/img/menu-toggle-btn.svg" alt="menu icon"/>
+        </button>
     </div>
 </header>
 <main>
-    <section class="hero container">
-        <section class="hero-content section-content">
-            <button class="explore-btn flex-center"> Explore the world! <img src="./assets/img/bag.svg" alt="hero icon"
-                                                                             class="hero-icon"/></button>
-            <h1>
-                Travel <span class="highlight-pink">top</span><br/>
-                <span class="highlight-pink">destination</span> of the world
-            </h1>
-            <p> We always make our customer happy by providing
-                as many choices as possible </p>
-            <div class="pair-btn">
-                <button class="flex-center">
-                    Get Started
-                </button>
-                <button class="btn-secondary flex-center">
-                    <img src="./assets/img/play.svg" alt="play icon" class="play-icon"/>
-                    Watch Demo
-                </button>
-            </div>
-        </section>
+    <section class="hero container flex-column">
         <section class="hero-images">
             <div class="gallery flex">
                 <div class="left">
@@ -80,6 +66,26 @@
                 <img class="right" src="./assets/img/hero-image-right.jpg" alt="hero image 1"/>
             </div>
         </section>
+        <section class="hero-content section-content">
+            <div class="explore-badge flex-center"> Explore the world! <img src="./assets/img/bag.svg" alt="hero icon"
+                                                                            class="hero-icon"/></div>
+            <h1>
+                Travel <span class="highlight-pink">top</span><br/>
+                <span class="highlight-pink">destination</span> of the world
+            </h1>
+            <p> We always make our customer happy by providing
+                as many choices as possible </p>
+            <div class="flex-column">
+                <button class="flex-center">
+                    Get Started
+                </button>
+                <button class="secondary-btn flex-center">
+                    <img src="./assets/img/play.svg" alt="play icon" class="play-icon"/>
+                    Watch Demo
+                </button>
+            </div>
+        </section>
+
     </section>
     <section class="partner container">
         <a href="https://www.tripadvisor.com/"><img src="./assets/img/partner-1.svg" alt="tripadvisor logo"/></a>
@@ -88,12 +94,12 @@
         <a href="https://www.airbnb.com/"><img src="./assets/img/partner-4.svg" alt="airbnb logo"/></a>
         <a href="https://www.orbitz.com/"><img src="./assets/img/partner-5.svg" alt="orbitz logo"/></a>
     </section>
-    <section class="services container">
-        <section class="section-content services-content">
+    <section class="services container flex-column" id="services">
+        <div class="section-content services-content">
             <span class="section-title"> Services </span>
             <h3> Our top value categories for you </h3>
-        </section>
-        <section class="services-cards flex">
+        </div>
+        <div class="flex-column flex">
             <div class="card">
                 <img src="./assets/img/service-destination.svg" alt="service image 1"/>
                 <h5> Best Tour Guide </h5>
@@ -109,58 +115,69 @@
                 <h5> Weather Forecast </h5>
                 <p> What looked like a small patch of purple grass, above five feet. </p>
             </div>
-        </section>
-    </section>
-    <section class="top-destination container" id="top-destination">
-        <div class="section-content">
-            <span class="section-title"> Top Destination </span>
-            <h3> Explore top destination </h3>
         </div>
-        <div class="pair-btn">
-            <button class="btn-secondary navigation-btn flex-center">
+    </section>
+    <section class="top-destination container flex-column" id="top-destination">
+        <div class="section-content">
+            <span class="section-title">Top Destination</span>
+            <h3>Explore top destination</h3>
+        </div>
+
+        <div class="flex pair-btn">
+            <button class="secondary-btn navigation-btn flex-center">
                 <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
             </button>
             <button class="navigation-btn flex-center">
                 <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
             </button>
         </div>
-        <section class="top-destination-cards flex">
-            <div class="card">
-                <img src="./assets/img/top-destination-1.jpg" alt="top destination image 1"/>
-                <section class="top-des-info flex">
-                    <div class="top-des-description">
-                        <h6> Paradise Beach, Bantayan Island </h6>
-                        <p> Rome, Italy </p>
+
+        <section class="top-destination-cards">
+            <article class="card">
+                <figure class="card-image">
+                    <img src="./assets/img/top-destination-1.jpg" alt="Ocean with full of Colors, Maldives">
+                </figure>
+                <div class="card-content">
+                    <div>
+                        <h6 class="card-title">Paradise Beach, Bantayan Island</h6>
+                        <p class="location">Rome, Italy</p>
+                        <h6 class="price">$550.16</h6>
                     </div>
-                    <h6 class="price">$550.16</h6>
-                    <h6 class="rating"> 4.8 ★</h6>
-                </section>
-            </div>
-            <div class="card">
-                <img src="./assets/img/top-destination-2.jpg" alt="top destination image 2"/>
-                <section class="top-des-info flex">
-                    <div class="top-des-description">
-                        <h6> Ocean with full of Colors </h6>
-                        <p> Maldives </p>
-                    </div>
-                    <h6 class="price">$20.99</h6>
-                    <h6 class="rating"> 4.5 ★</h6>
-                </section>
-            </div>
-            <div class="card">
-                <img src="./assets/img/top-destination-3.jpg" alt="top destination image 3"/>
-                <section class="top-des-info flex">
-                    <div class="top-des-description">
-                        <h6> Mountain View, Above the cloud </h6>
-                        <p> United Arab Emeries </p>
-                    </div>
-                    <h6 class="price">$150.99</h6>
-                    <h6 class="rating"> 5 ★</h6>
-                </section>
-            </div>
+                    <h6 class="rating">
+                        4.5 ★
+                    </h6>
+                </div>
+            </article>
+            <article class="card">
+                <figure>
+                    <img src="./assets/img/top-destination-2.jpg" alt="Ocean colorful image"/>
+                    <figcaption class="top-des-info flex-column">
+                        <div>
+                            <h6>Ocean with full of Colors</h6>
+                            <p>Maldives</p>
+                            <p class="price">$20.99</p>
+                        </div>
+                        <h6 class="rating">4.5 ★</h6>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="./assets/img/top-destination-3.jpg" alt="Mountain view image"/>
+                    <figcaption class="top-des-info flex-column">
+                        <div>
+                            <h6>Mountain View, Above the cloud</h6>
+                            <p>United Arab Emirates</p>
+                            <h6 class="price">$150.99 </h6>
+                        </div>
+                        <h6 class="rating">5 ★</h6>
+                    </figcaption>
+                </figure>
+            </article>
         </section>
     </section>
-    <section class="travel-point flex ">
+    <section class="travel-point flex-column container">
         <img src="./assets/img/travel-point.png" alt="travel point image 1"/>
         <div class="travel-point-content flex-column">
             <section class="section-content">
@@ -169,7 +186,7 @@
                 <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                     classical Latin literature from 45 BC. </p>
             </section>
-            <div class="grid-2">
+            <div class="grid-1">
                 <div>
                     <h4> 500+ </h4>
                     <p> Holiday Package </p>
@@ -191,6 +208,7 @@
     </section>
     <section class="key-features">
         <div class="section-content container">
+            <img src="assets/img/key-features.png" alt="key features image"/>
             <span class="section-title">Key Features</span>
             <h3>We offer best services</h3>
             <p>
@@ -233,15 +251,12 @@
                 </li>
             </ul>
         </div>
-        <img src="assets/img/key-features.png" alt="key features image"/>
     </section>
     <section class="testimonials container">
-        <button class="navigation-btn btn-secondary">
-            <img src="./assets/img/arrow-left.svg" alt="left arrow"/>
-        </button>
         <div class="section-content flex-center">
-            <span class="section-title">Testimonials</span>
-            <h3>Trust our clients</h3>
+            <div class="gap-1">
+                <span class="section-title">Testimonials</span>
+                <h3>Trust our clients</h3></div>
             <div class="avatar">
                 <img src="./assets/img/testimonials.jpg" alt="Mark Smith"/>
             </div>
@@ -259,16 +274,22 @@
                 <span class="dot active"></span>
                 <span class="dot"></span>
             </div>
+            <div class="flex pair-btn">
+                <button class="secondary-btn navigation-btn flex-center">
+                    <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
+                </button>
+                <button class="navigation-btn flex-center">
+                    <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
+                </button>
+            </div>
         </div>
-        <button class="navigation-btn">
-            <img src="./assets/img/arrow-right.svg" alt="right arrow"/>
-        </button>
+
     </section>
     <section class="subscribe-newsletter container flex-center">
         <div class="section-content flex-column">
             <span class="section-title">subscribe to our newsletter</span>
             <h2>Prepare yourself & let’s explore the beauty of the world</h2>
-            <form action="#" class="email-form flex">
+            <form action="#" class="email-form ">
                 <div class="input-wrapper">
                     <img src="./assets/img/email-icon.svg" alt="email icon" class="email-icon"/>
                     <label>
@@ -280,50 +301,66 @@
         </div>
     </section>
 </main>
-<footer class="container">
+<footer id="footer" class="container">
     <section class="about-company">
         <div class="logo flex">
-            <img src="./assets/img/logo.svg" alt="logo image"/>
-            <p>Travlog</p>
+            <img src="./assets/img/logo.svg" alt="logo image" />
+            <p class="logo-name">Travlog</p>
         </div>
         <p class="description">
-            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-            Latin literature from 45 BC.
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
+            literature from 45 BC.
         </p>
         <div class="social-icons flex">
-            <a href="#"><img src="./assets/img/facebook.svg" alt="facebook icon"/></a>
-            <a href="#"><img src="./assets/img/twitter.svg" alt="twitter icon"/></a>
-            <a href="#"><img src="./assets/img/instagram.svg" alt="instagram icon"/></a>
+            <a href="#"><img src="./assets/img/facebook.svg" alt="facebook icon" /></a>
+            <a href="#"><img src="./assets/img/twitter.svg" alt="twitter icon" /></a>
+            <a href="#"><img src="./assets/img/instagram.svg" alt="instagram icon" /></a>
         </div>
     </section>
 
-    <table class="footer-links-table">
-        <tr>
-            <th>Company</th>
-            <th>Contact</th>
-            <th>Meet Us</th>
-        </tr>
-        <tr>
-            <td><a href="#">About</a></td>
-            <td><a href="#">Why Travlog?</a></td>
-            <td><a href="#">+00 92 1234 56789</a></td>
-        </tr>
-        <tr>
-            <td><a href="#">Careers</a></td>
-            <td><a href="#">Contact Us</a></td>
-            <td><a href="#">info@travlog.com</a></td>
-        </tr>
-        <tr>
-            <td><a href="#">Mobile</a></td>
-            <td><a href="#">FAQ’s</a></td>
-            <td><a href="#">205. R Street, New York</a></td>
-        </tr>
-        <tr>
-            <td><a href="#"></a></td>
-            <td><a href="#">Blog</a></td>
-            <td><a href="#">BD23200</a></td>
-        </tr>
-    </table>
+    <section class="footer-links">
+        <details>
+            <summary>
+                <h6> Company</h6>
+                <img src="assets/img/dropdown-button.svg" alt="dropdown icon" class="dropdown-icon"/>
+
+            </summary>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Mobile</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>
+                <h6> Contact Us</h6>
+                <img src="assets/img/dropdown-button.svg" alt="dropdown icon" class="dropdown-icon"/>
+
+            </summary>
+            <ul>
+                <li><a href="#">Why Travlog?</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ’s</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>
+                <h6> Meet Up</h6>
+                <img src="assets/img/dropdown-button.svg" alt="dropdown icon" class="dropdown-icon"/>
+
+            </summary>
+            <ul>
+                <li><a href="#">+00 92 1234 56789</a></li>
+                <li><a href="#">info@travlog.com</a></li>
+                <li><a href="#">205. R Street, New York</a></li>
+                <li><a href="#">BD23200</a></li>
+            </ul>
+        </details>
+    </section>
 </footer>
+
 </body>
 </html>

@@ -1,45 +1,62 @@
-footer {
+#footer {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
-    padding: 4rem;
     justify-content: space-between;
+    background-color: #fff;
 }
 
 .about-company {
-    flex-basis: 45%;
+    flex: 1 1 300px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 0 0;
+}
+
+.description {
+    max-width: 300px;
+    color: var(--color-fourty);
 }
 
 .social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-icons img {
+    border-radius: 50%;
+    padding: 6px;
+}
+
+.footer-links {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
 }
-.footer-links-table {
-    flex-basis: 45%;
-    width: 100%;
-    max-width: 700px;
-    border-collapse: collapse;
+
+.footer-links details {
+    padding-bottom: 0.5rem;
 }
 
-.footer-links-table th {
-    text-align: left;
+.footer-links summary {
     font-weight: bold;
-    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links ul {
+    margin-top: 0.5rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-links a:hover {
     color: var(--color-primary);
-    font-size: var(--font-size-text-lg);
-}
-
-.footer-links-table td {
-    padding: 0.5rem 0;
-}
-
-.footer-links-table a {
-    color: rgba(var(--color-primary), 0.75);
-    text-decoration: none;
-    display: inline-block;
-    margin-bottom: 1rem;
-    transition: color 0.2s ease;
 }

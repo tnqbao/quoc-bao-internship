@@ -3,9 +3,8 @@
 }
 
 .logo > p {
-    font-size: var(--font-size-title-sm);
-    font-weight: 600;
+    font-size: var(--font-size-title-xs);
+    font-weight: var(--font-weight-title);
     color: var(--color-primary);
-    margin: 0;
     align-self: center;
 }

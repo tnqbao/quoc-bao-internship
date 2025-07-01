@@ -1,9 +1,15 @@
 .partner {
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.partner img {
+    height: 20px;
+    width: auto;
 }
 
 .partner img:hover {
     transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-    cursor: pointer;
+    transition: transform .2s ease-in-out;
+    cursor: pointer
 }

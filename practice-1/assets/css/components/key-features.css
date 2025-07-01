@@ -3,31 +3,34 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
-    padding: 2rem 1rem;
+    padding: 2rem 1rem
 }
 
 .key-features .section-content {
-    flex: 2;
+    flex: 2
 }
 
 .key-features > img {
     flex: 3;
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: contain
 }
 
 .features-list {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.5rem
 }
 
 .feature-item {
+    flex-direction: column;
     display: flex;
-    align-items: center;
-    gap: 1rem;
+    align-items: start;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: start;
 }
 
 .icon {
@@ -38,14 +41,9 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 0;
-    top: 2rem;
-    left: 2rem;
-
 }
 
 .icon img {
     width: 40px;
-    height: 32px;
+    height: 32px
 }
-
-
