@@ -16,11 +16,6 @@
     justify-content: space-between;
 }
 
-.pair-btn button {
-    width: 4rem;
-    height: 4rem;
-}
-
 .secondary-btn {
     background: var(--bg-secondary);
     color: var(--color-primary);
@@ -36,4 +31,3 @@
     border-radius: 25%;
     margin: .5rem
 }
-
