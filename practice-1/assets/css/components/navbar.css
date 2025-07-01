@@ -62,13 +62,17 @@
 
     .navbar .menu-toggle-btn {
         display: block;
-        padding: 0.5rem;
         border: none;
     }
 
     .navbar button {
-        padding: 0.75rem 1.5rem;
         height: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pair-btn button {
+        padding: 0.5rem 1rem;
     }
 
     .menu-toggle-btn {
