@@ -8,6 +8,74 @@
     display: none;
 }
 
+.menu-toggle-btn {
+    display: block;
+    padding: 0 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 25%;
+    margin: .5rem;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        padding: 1rem 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--bg-secondary);
+    }
+
+    .navbar > ul {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .navbar .nav-links {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .navbar a {
+        text-decoration: none;
+        color: var(--color-fourty);
+        font-weight: var(--font-weight-title);
+    }
+
+    .navbar a:hover, a:active, a.active {
+        color: var(--color-primary);
+    }
+
+    .navbar .btn-secondary {
+        border: none;
+    }
+
+    .navbar .pair-btn {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navbar .menu-button {
+        display: block;
+    }
+
+    .navbar .menu-toggle-btn {
+        display: block;
+        padding: 0.5rem;
+        border: none;
+    }
+
+    .navbar button {
+        padding: 0.75rem 1.5rem;
+        height: 40px;
+    }
+
+    .menu-toggle-btn {
+        display: block;
+    }
+}
+
 @media (min-width: 1080px) {
     .navbar {
         padding: 2rem 2rem;

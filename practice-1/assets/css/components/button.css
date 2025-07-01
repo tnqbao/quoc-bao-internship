@@ -23,11 +23,4 @@
     font-weight: var(--font-weight-title);
 }
 
-.menu-toggle-btn {
-    display: block;
-    padding: 0 0;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 25%;
-    margin: .5rem
-}
+
