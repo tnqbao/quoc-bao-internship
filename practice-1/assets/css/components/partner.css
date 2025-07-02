@@ -1,6 +1,7 @@
 .partner {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .partner img {
@@ -12,4 +13,17 @@
     transform: scale(1.05);
     transition: transform .2s ease-in-out;
     cursor: pointer
+}
+
+@media (min-width: 768px) {
+    .partner img {
+        height: 32px;
+        width: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .partner {
+        justify-content: space-between;
+    }
 }

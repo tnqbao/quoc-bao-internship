@@ -38,16 +38,16 @@
 
 
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) {
     .container {
         margin: 0 2rem;
         padding: 4rem 0;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1080px) {
     .container {
-        margin: 0 2rem;
+        margin: 0 4rem;
         padding: 4rem 0;
     }
 }

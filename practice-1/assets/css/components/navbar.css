@@ -1,5 +1,5 @@
 .navbar {
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
@@ -19,11 +19,12 @@
 
 @media (min-width: 768px) {
     .navbar {
-        padding: 1rem 2rem;
+        padding: 1rem 0;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
         background-color: var(--bg-secondary);
+        margin: 0 2rem;
     }
 
     .navbar > ul {
@@ -80,11 +81,12 @@
 
 @media (min-width: 1080px) {
     .navbar {
-        padding: 2rem 2rem;
+        padding: 2rem 0;
         justify-content: space-between;
         align-items: center;
         background-color: var(--bg-secondary);
         flex-direction: row;
+        margin: 0 4rem;
     }
 
     nav {
