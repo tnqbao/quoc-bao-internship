@@ -12,7 +12,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
 .flex-start {
@@ -25,13 +24,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
 }
+
 
 .grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
 }
 
 .text-center {
@@ -41,9 +39,15 @@
 
 
 @media (max-width: 1024px) {
-    /* Tablet styles */
+    .container {
+        margin: 0 2rem;
+        padding: 4rem 0;
+    }
 }
 
 @media (min-width: 1440px) {
-    /* Laptop styles */
+    .container {
+        margin: 0 2rem;
+        padding: 4rem 0;
+    }
 }

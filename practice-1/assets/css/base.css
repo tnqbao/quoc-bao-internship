@@ -111,10 +111,6 @@ ul {
     margin: 0
 }
 
-section {
-    gap: 2rem;
-}
-
 .gap-1 {
     gap: 1rem
 }
@@ -134,4 +130,5 @@ section {
 .gap-6 {
     gap: 6rem
 }
+
 

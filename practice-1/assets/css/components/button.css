@@ -11,7 +11,6 @@
 
 .pair-btn {
     display: flex;
-    align-items: center;
     gap: 1rem;
     justify-content: space-between;
 }
@@ -22,5 +21,4 @@
     font-size: var(--font-size-text-md);
     font-weight: var(--font-weight-title);
 }
-
 

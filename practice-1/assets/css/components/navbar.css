@@ -69,14 +69,12 @@
         height: 40px;
         align-items: center;
         justify-content: center;
-    }
-
-    .pair-btn button {
         padding: 0.5rem 1rem;
     }
 
     .menu-toggle-btn {
         display: block;
+        padding: 0 !important;
     }
 }
 
@@ -123,6 +121,7 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+
     }
 
     .navbar .menu-button {

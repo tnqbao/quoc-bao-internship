@@ -1,7 +1,7 @@
 .section-content {
     text-align: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .section-content .section-title {
@@ -12,3 +12,16 @@
     text-wrap: wrap;
     text-transform: uppercase
 }
+
+@media (min-width: 1080px) {
+    .section-content {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .section-content .section-title {
+        font-size: var(--font-size-text-md);
+        margin-bottom: 2rem;
+    }
+}
+

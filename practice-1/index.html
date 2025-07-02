@@ -2,25 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="A travel website showcasing top destinations, services, and features.">
     <title> Practice 1 </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/components/navbar.css">
-    <link rel="stylesheet" href="./assets/css/components/logo.css">
-    <link rel="stylesheet" href="./assets/css/components/button.css">
-    <link rel="stylesheet" href="./assets/css/components/hero.css">
-    <link rel="stylesheet" href="assets/css/components/section-content.css">
-    <link rel="stylesheet" href="./assets/css/components/partner.css">
-    <link rel="stylesheet" href="./assets/css/components/services.css">
-    <link rel="stylesheet" href="./assets/css/components/card.css">
-    <link rel="stylesheet" href="./assets/css/components/top-destination.css">
-    <link rel="stylesheet" href="./assets/css/components/travel-point.css">
-    <link rel="stylesheet" href="./assets/css/components/key-features.css">
-    <link rel="stylesheet" href="./assets/css/components/testimonials.css">
-    <link rel="stylesheet" href="./assets/css/components/subscribe-newsletter.css">
-    <link rel="stylesheet" href="./assets/css/components/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
@@ -31,7 +16,7 @@
         </button>
     </div>
     <div class="logo flex">
-        <img src="./assets/img/logo.svg" alt="logo image"/>
+        <img src="./assets/img/logo.svg" alt="Travlog logo"/>
         <p> Travlog </p>
     </div>
     <nav>
@@ -60,26 +45,27 @@
         <section class="hero-images">
             <div class="gallery flex">
                 <div class="left">
-                    <img src="./assets/img/hero-image-top.jpg" alt="hero image 1"/>
-                    <img src="./assets/img/hero-image-bottom.jpg" alt="hero image 2"/>
+                    <img src="./assets/img/hero-image-top.jpg" alt="Tour Guide illustration"/>
+                    <img src="./assets/img/hero-image-bottom.jpg" alt="Tour Guide illustration"/>
                 </div>
-                <img class="right" src="./assets/img/hero-image-right.jpg" alt="hero image 1"/>
+                <img class="right" src="./assets/img/hero-image-right.jpg" alt="Tour Guide illustration"/>
             </div>
         </section>
-        <section class="hero-content section-content">
-            <div class="explore-badge flex-center"> Explore the world! <img src="./assets/img/bag.svg" alt="hero icon"
-                                                                            class="hero-icon"/></div>
+        <section class="hero-content section-content flex-column flex-center">
+            <div class="explore-badge flex-center"> Explore the world!
+                <img src="./assets/img/bag.svg" alt="hero icon" class="hero-icon"/>
+            </div>
             <h1>
                 Travel <span class="highlight-pink">top</span><br/>
                 <span class="highlight-pink">destination</span> of the world
             </h1>
             <p> We always make our customer happy by providing
                 as many choices as possible </p>
-            <div class="flex-column">
+            <div class="pair-btn">
                 <button class="flex-center">
                     Get Started
                 </button>
-                <button class="secondary-btn flex-center">
+                <button class="secondary-btn flex-center gap-1" aria-label="Watch demo">
                     <img src="./assets/img/play.svg" alt="play icon" class="play-icon"/>
                     Watch Demo
                 </button>
@@ -88,11 +74,21 @@
 
     </section>
     <section class="partner container">
-        <a href="https://www.tripadvisor.com/"><img src="./assets/img/partner-1.svg" alt="tripadvisor logo"/></a>
-        <a href="https://www.expedia.com.vn/"><img src="./assets/img/partner-2.svg" alt="partner logo 2"/></a>
-        <a href="https://www.booking.com/"><img src="./assets/img/partner-3.svg" alt="booking logo"/></a>
-        <a href="https://www.airbnb.com/"><img src="./assets/img/partner-4.svg" alt="airbnb logo"/></a>
-        <a href="https://www.orbitz.com/"><img src="./assets/img/partner-5.svg" alt="orbitz logo"/></a>
+        <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-1.svg" alt="tripadvisor logo"/>
+        </a>
+        <a href="https://www.expedia.com.vn/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-2.svg" alt="partner logo 2"/>
+        </a>
+        <a href="https://www.booking.com/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-3.svg" alt="booking logo"/>
+        </a>
+        <a href="https://www.airbnb.com/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-4.svg" alt="airbnb logo"/>
+        </a>
+        <a href="https://www.orbitz.com/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-5.svg" alt="orbitz logo"/>
+        </a>
     </section>
     <section class="services container flex-column" id="services">
         <div class="section-content services-content">
@@ -101,17 +97,17 @@
         </div>
         <div class="flex-column flex">
             <div class="card">
-                <img src="./assets/img/service-destination.svg" alt="service image 1"/>
+                <img src="./assets/img/service-destination.svg" alt="Best tour guild"/>
                 <h5> Best Tour Guide </h5>
                 <p> What looked like a small patch of purple grass, above five feet. </p>
             </div>
             <div class="card">
-                <img src="./assets/img/service-booking.svg" alt="service image 2"/>
+                <img src="./assets/img/service-booking.svg" alt="Easy booking"/>
                 <h5> Easy Booking </h5>
                 <p> Square, was moving across the sand in their direction. </p>
             </div>
             <div class="card">
-                <img src="./assets/img/service-cloudy.png" alt="service image 3"/>
+                <img src="./assets/img/service-cloudy.png" alt="Weather Forecast"/>
                 <h5> Weather Forecast </h5>
                 <p> What looked like a small patch of purple grass, above five feet. </p>
             </div>
