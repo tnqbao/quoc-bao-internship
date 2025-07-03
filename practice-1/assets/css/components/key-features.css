@@ -1,19 +1,18 @@
 .key-features {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 2rem;
-    padding: 2rem 1rem
+    gap: 4rem;
+    padding: 2rem
 }
 
 .key-features .section-content {
-    flex: 2
+    flex: 2rem;
+    gap: 1rem;
 }
 
-.key-features > img {
-    flex: 3;
-    max-width: 100%;
-    height: auto;
+.key-features .key-features-image {
+    width: 100%;
+    aspect-ratio: 0.8;
     object-fit: contain
 }
 
@@ -30,7 +29,16 @@
     align-items: start;
     gap: 2rem;
     padding: 2rem;
+    border-radius: 2rem;
     text-align: start;
+}
+
+.feature-item .text {
+    align-items: center;
+}
+
+.key-features-content {
+
 }
 
 .icon {
@@ -46,4 +54,55 @@
 .icon img {
     width: 40px;
     height: 32px
+}
+
+@media (min-width: 768px) {
+    .key-features {
+        padding: 4rem;
+
+    }
+
+    .features-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .features-list li {
+        width: 100%;
+    }
+
+    .feature-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1080px) {
+    .key-features {
+        padding: 4rem 0;
+        gap: 5rem;
+        flex-direction: row-reverse;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .key-features .key-features-content {
+        flex: 2;
+    }
+
+    .key-features .key-features-image {
+        width: 50%;
+        aspect-ratio: 0.8;
+        flex: 3;
+    }
+
+    .features-list {
+        gap: 3rem;
+    }
+
+    .feature-item {
+        flex: 1 1 calc(25% - 3rem);
+    }
 }
