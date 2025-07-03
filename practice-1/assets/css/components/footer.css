@@ -1,7 +1,9 @@
-#footer {
+/* --- Footer Layout --- */
+footer, #footer {
     display: flex;
     flex-wrap: wrap;
     gap: 4rem;
+    padding: 4rem;
     justify-content: space-between;
     background-color: #fff;
 }
@@ -11,6 +13,7 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    padding: 0;
 }
 
 .description {
@@ -28,6 +31,7 @@
     padding: 6px;
 }
 
+/* --- Footer Links --- */
 .footer-links {
     flex: 1 1 300px;
     display: flex;
@@ -35,6 +39,7 @@
     gap: 2rem;
 }
 
+/* Dropdowns: visible on mobile, hidden on desktop */
 .footer-links details {
     padding-bottom: 0.5rem;
 }
@@ -59,4 +64,42 @@
 
 .footer-links a:hover {
     color: var(--color-primary);
+}
+
+/* Table: hidden on mobile, visible on desktop */
+.footer-links-table {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    display: none;
+}
+
+.footer-links-table th {
+    text-align: left;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: var(--color-primary);
+    font-size: var(--font-size-text-lg);
+}
+
+.footer-links-table td {
+    padding: 0.5rem 0;
+}
+
+.footer-links-table a {
+    color: rgba(var(--color-primary), 0.75);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 1rem;
+    transition: color 0.2s ease;
+}
+
+/* Responsive: show table, hide dropdowns on desktop */
+@media (min-width: 768px) {
+    .footer-links details {
+        display: none;
+    }
+    .footer-links-table {
+        display: table;
+    }
 }
