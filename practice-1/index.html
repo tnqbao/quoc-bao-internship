@@ -120,10 +120,10 @@
                 <h3>Explore top destination</h3>
             </div>
             <div class="pair-btn">
-                <button class="secondary-btn navigation-btn flex-center">
+                <button class="secondary-btn navigation-btn flex-center" aria-label="Previous destination">
                     <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
                 </button>
-                <button class="navigation-btn flex-center">
+                <button class="navigation-btn flex-center" aria-label="Next destination">
                     <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
                 </button>
             </div>
@@ -251,9 +251,12 @@
             </ul>
         </div>
     </section>
-    <section class="testimonials container">
-        <div class="section-content flex-center">
-            <div class="gap-1">
+    <section class="testimonials container flex">
+        <button class="secondary-btn navigation-btn flex-center side-btn" aria-label="Previous testimonial">
+            <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
+        </button>
+        <div class="flex-column testimonials-content" >
+            <div class="section-content flex-center">
                 <span class="section-title">Testimonials</span>
                 <h3>Trust our clients</h3></div>
             <div class="avatar">
@@ -262,27 +265,27 @@
             <h5><span class="highlight">Mark Smith</span> / Travel Enthusiast</h5>
 
             <div class="stars">⭐⭐⭐⭐⭐</div>
-
             <p>
                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
                 classical Latin literature from 45 BC.
             </p>
-
             <div class="dots">
                 <span class="dot"></span>
                 <span class="dot active"></span>
                 <span class="dot"></span>
             </div>
-            <div class="flex pair-btn">
-                <button class="secondary-btn navigation-btn flex-center">
-                    <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
-                </button>
-                <button class="navigation-btn flex-center">
-                    <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
-                </button>
-            </div>
         </div>
-
+        <div class="flex pair-btn bottom-btn">
+            <button class="secondary-btn navigation-btn flex-center" aria-label="Previous testimonial">
+                <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
+            </button>
+            <button class="navigation-btn flex-center" aria-label="Next testimonial">
+                <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
+            </button>
+        </div>
+        <button class="navigation-btn flex-center side-btn" aria-label="Next testimonial">
+            <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
+        </button>
     </section>
     <section class="subscribe-newsletter container flex-center">
         <div class="section-content flex-column">

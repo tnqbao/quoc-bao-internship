@@ -54,6 +54,7 @@
     .travel-point img {
         width: 65%;
         aspect-ratio: 1.25;
+        max-width: 900px;
     }
 
     .travel-point-content {
