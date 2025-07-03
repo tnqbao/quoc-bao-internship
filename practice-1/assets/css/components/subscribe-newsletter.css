@@ -2,7 +2,8 @@
     background-color: #fff7e9;
     padding: 4rem 2rem;
     border-radius: 20px;
-    text-align: center
+    text-align: center;
+    gap: 4rem;
 }
 
 .subscribe-newsletter .section-content {
@@ -53,4 +54,41 @@
 
 .btn-subscribe:hover {
     background-color: #5548d9
+}
+
+@media (min-width: 768px) {
+    .subscribe-newsletter {
+        padding: 6rem 4rem;
+    }
+
+    .email-form {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .input-wrapper {
+        width: 60%;
+    }
+
+    .btn-subscribe {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1080px) {
+    .subscribe-newsletter {
+        padding: 8rem 6rem;
+    }
+
+    .email-form {
+        width: 100%;
+    }
+
+    .input-wrapper {
+        width: 75%;
+    }
+
+    .btn-subscribe {
+        width: 25%;
+    }
 }

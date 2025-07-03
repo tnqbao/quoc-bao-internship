@@ -64,7 +64,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--font-size-title-xl);
+    font-size: var(--font-size-title-md);
     color: var(--color-primary)
 }
 
@@ -131,4 +131,14 @@ ul {
     gap: 6rem
 }
 
+@media (min-width: 768px) {
+    h2 {
+        font-size: var(--font-size-title-lg);
+    }
+}
 
+@media (min-width: 1080px) {
+    h2 {
+        font-size: var(--font-size-title-xl);
+    }
+}
