@@ -12,6 +12,6 @@
 .card:hover {
     box-shadow: 0 2rem .5rem var(--color-shadow);
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.01);
     transition: transform .2s ease-in-out
 }

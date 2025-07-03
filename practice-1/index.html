@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-<header class="navbar flex">
+<header class="navbar flex container">
     <div class="menu-button">
         <button class="menu-toggle-btn flex-center">
             <img src="./assets/img/menu-toggle-btn.svg" alt="menu icon"/>
@@ -73,7 +73,7 @@
         </section>
 
     </section>
-    <section class="partner container">
+    <section class="partner container flex">
         <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener">
             <img src="./assets/img/partner-1.svg" alt="tripadvisor logo"/>
         </a>
@@ -90,7 +90,7 @@
             <img src="./assets/img/partner-5.svg" alt="orbitz logo"/>
         </a>
     </section>
-    <section class="services container" id="services">
+    <section class="services container flex" id="services">
         <div class="section-content services-content">
             <span class="section-title"> Services </span>
             <h3> Our top value categories for you </h3>
@@ -114,20 +114,20 @@
         </div>
     </section>
     <section class="top-destination container flex-column" id="top-destination">
-        <div class="section-content">
-            <span class="section-title">Top Destination</span>
-            <h3>Explore top destination</h3>
+        <div class="flex top-destination-contents">
+            <div class="section-content flex">
+                <span class="section-title">Top Destination</span>
+                <h3>Explore top destination</h3>
+            </div>
+            <div class="pair-btn">
+                <button class="secondary-btn navigation-btn flex-center">
+                    <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
+                </button>
+                <button class="navigation-btn flex-center">
+                    <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
+                </button>
+            </div>
         </div>
-
-        <div class="flex pair-btn">
-            <button class="secondary-btn navigation-btn flex-center">
-                <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
-            </button>
-            <button class="navigation-btn flex-center">
-                <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
-            </button>
-        </div>
-
         <section class="top-destination-cards">
             <article class="card">
                 <figure class="card-image">

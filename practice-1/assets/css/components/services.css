@@ -4,6 +4,10 @@
     gap: 2rem;
 }
 
+.services .services-cards {
+    flex-direction: column;
+}
+
 .services .services-content {
     display: flex;
     flex-direction: column;
@@ -27,7 +31,8 @@
 }
 
 @media (min-width: 768px) {
-    .sevices .services-cards {
+    .services .services-cards {
+        flex-direction: row;
         justify-content: space-around;
     }
 

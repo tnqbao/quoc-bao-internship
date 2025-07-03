@@ -2,6 +2,7 @@
     padding: 1rem 0;
     flex-direction: row-reverse;
     justify-content: space-between;
+
 }
 
 .nav-links, .navbar .pair-btn, nav {
