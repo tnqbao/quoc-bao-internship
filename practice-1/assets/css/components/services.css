@@ -1,5 +1,4 @@
 .services {
-    display: flex;
     flex-direction: column;
     gap: 2rem;
 }
@@ -17,17 +16,23 @@
 }
 
 .services .services-cards {
-    gap: 1.5rem
+    gap: 1rem
 }
 
 .services .card {
-    flex-basis: 100%;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 2rem;
 }
 
 .services .card img {
     width: 4rem;
     height: auto;
     border-radius: 1rem
+}
+
+.services .card-content {
+    gap: 2rem;
 }
 
 @media (min-width: 768px) {

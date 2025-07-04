@@ -7,7 +7,8 @@
 
 #hero .highlight-pink {
     color: var(--color-secondary);
-    font-weight: var(--font-weight-title)
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-h1);
 }
 
 .hero-content {
