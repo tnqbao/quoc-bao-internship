@@ -42,17 +42,29 @@
     </div>
 </header>
 <main>
-    <section id ="hero" class="container flex-column">
-        <section class="hero-images">
+    <section id="hero" class="container flex-column">
+        <div class="hero-images">
             <div class="gallery flex">
                 <div class="left">
-                    <img src="./assets/img/hero-image-top.jpg" alt="Tour Guide illustration"/>
-                    <img src="./assets/img/hero-image-bottom.jpg" alt="Tour Guide illustration"/>
+                    <picture>
+                        <source srcset="assets/img/path-and-beach.jpg" media="(max-width: 768px)"/>
+                        <source srcset="assets/img/path-and-beach.webp" media="(min-width: 768px)"/>
+                        <img src="assets/img/path-and-beach.jpg" alt="Path and Beach" loading="lazy"/>
+                    </picture>
+                    <picture>
+                        <source srcset="assets/img/girl-sitting-on-mountain.jpg" media="(max-width: 768px)"/>
+                        <source srcset="assets/img/the-girl-sit-on-mountain.webp" media="(min-width: 768px)"/>
+                        <img src="assets/img/girl-sitting-on-mountain.jpg" alt="Sea and Sand" loading="lazy"/>
+                    </picture>
                 </div>
-                <img class="right" src="./assets/img/hero-image-right.jpg" alt="Tour Guide illustration"/>
+                <picture >
+                    <source srcset="assets/img/girl-taking-photo.jpg" media="(max-width: 768px)"/>
+                    <source srcset="assets/img/girl-taking-photo.webp" media="(min-width: 768px)"/>
+                    <img class="right" src="assets/img/girl-taking-photo.jpg" alt="Girl taking photo"/>
+                </picture>
             </div>
-        </section>
-        <section class="hero-content section-content flex-column flex-center">
+        </div>
+        <div class="hero-content section-content flex-column flex-center">
             <div class="explore-badge flex-center"> Explore the world!
                 <img src="./assets/img/bag.svg" alt="hero icon" class="hero-icon"/>
             </div>
@@ -71,7 +83,7 @@
                     Watch Demo
                 </button>
             </div>
-        </section>
+        </div>
 
     </section>
     <section class="partner container flex">
