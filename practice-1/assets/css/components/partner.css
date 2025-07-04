@@ -2,6 +2,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 2rem;
+    padding: 2rem 0;
 }
 
 .partner img {
@@ -16,6 +17,9 @@
 }
 
 @media (min-width: 768px) {
+    .partner {
+        padding: 4rem 0;
+    }
     .partner img {
         height: 32px;
         width: auto;
