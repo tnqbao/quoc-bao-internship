@@ -11,40 +11,75 @@
     --font-family-primary: 'Circular Std', sans-serif;
     --font-family-secondary: 'Inter', sans-serif;
 
-    --font-size-title-xs: 23px;
-    --font-size-title-sm: 28px;
-    --font-size-title-md: 35px;
-    --font-size-title-lg: 44px;
-    --font-size-title-xl: 55px;
-    --font-size-title-xxl: 69px;
+    --font-size-h1: 2.5rem;
+    --font-size-h2: 2rem;
+    --font-size-h3: 1.4375rem;
+    --font-size-highlight: 2.1875rem;
+    --font-size-content: 1.125rem;
+    --font-size-button: 1.0625rem;
+    --font-size-label: 1rem;
+    --font-size-link: 0.875rem;
 
-    --font-size-text-lg: 23px;
-    --font-size-text-md: 18px;
-    --font-size-text-sm: 16px;
+
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --radius-lg: 2rem;
+
+    --label-spacing-inline: 20%;
+    --label-spacing-none: 0;
 
     --font-weight-title: 700;
-    --font-weight-description: 400;
-    --line-height-header: 1.2em;
-    --line-height-text: 1.6em;
+    --font-weight-content: 400;
+    --line-height-title: 1.2em;
+    --line-height-content: 1.6em;
+
     --color-shadow: rgba(0, 0, 0, 0.1);
 }
 
+@media (min-width: 768px) {
+    :root {
+        --font-size-h1: 3.5rem;
+        --font-size-h2: 2.5rem;
+        --font-size-h3: 1.4375rem;
+        --font-size-label: 1.5rem;
+        --font-size-md: 1.125rem;
+    }
+}
+
+@media (min-width: 1080px) {
+    :root {
+        --font-size-h1: 4.3125rem;
+        --font-size-h2: 2.75rem;
+        --font-size-h3: 1.75rem;
+        --font-size-label: 1.5rem;
+        --font-size-md: 1.125rem;
+    }
+}
+
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin-inline: auto;
+    padding-inline: var(--spacing-sm);
+}
 
 body {
-    font-family: var(--font-family-primary), serif;
+    font-family: var(--font-family-primary), sans-serif;
     color: var(--color-primary);
     background-color: var(--bg-secondary)
 }
 
 button {
     background: var(--bg-primary);
-    font-size: var(--font-size-text-sm);
+    font-size: var(--font-size-button);
     font-weight: var(--font-weight-title);
+    line-height: var(--line-height-title);
     color: var(--color-fifty);
     cursor: pointer;
-    border: none;
-    padding: 1rem 1rem;
-    border-radius: 40px
+    border: 1px;
 }
 
 button:hover {
@@ -54,55 +89,30 @@ button:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    line-height: var(--line-height-header);
+    line-height: var(--line-height-title);
     font-weight: var(--font-weight-title)
 }
 
 h1 {
-    font-size: var(--font-size-title-lg);
+    font-size: var(--font-size-h1);
     color: var(--color-primary)
 }
 
 h2 {
-    font-size: var(--font-size-title-md);
+    font-size: var(--font-size-h2);
     color: var(--color-primary)
 }
 
 h3 {
-    font-size: var(--font-size-title-md);
+    font-size: var(--font-size-h3);
     color: var(--color-primary)
 }
 
-h4 {
-    font-size: var(--font-size-title-md);
-    color: var(--color-third)
-}
-
-h5 {
-    font-size: var(--font-size-title-sm);
-    font-weight: var(--font-weight-title);
-    color: var(--color-primary);
-    margin: 0
-}
-
-h6 {
-    font-size: var(--font-size-title-xs);
-    font-weight: var(--font-weight-title);
-    color: var(--color-primary);
-    margin: 0
-}
-
 p {
-    font-size: var(--font-size-text-sm);
-    font-weight: var(--font-weight-description);
+    font-size: var(--font-size-content);
+    font-weight: var(--font-weight-content);
     color: var(--color-fourty);
-    line-height: var(--line-height-text);
-    margin: 1rem 0
-}
-
-span {
-    font-weight: var(--font-weight-title);
-    color: var(--color-secondary)
+    line-height: var(--line-height-content);
 }
 
 ul {
@@ -111,34 +121,5 @@ ul {
     margin: 0
 }
 
-.gap-1 {
-    gap: 1rem
-}
 
-.gap-2 {
-    gap: 2rem
-}
 
-.gap-3 {
-    gap: 3rem
-}
-
-.gap-4 {
-    gap: 4rem
-}
-
-.gap-6 {
-    gap: 6rem
-}
-
-@media (min-width: 768px) {
-    h2 {
-        font-size: var(--font-size-title-lg);
-    }
-}
-
-@media (min-width: 1080px) {
-    h2 {
-        font-size: var(--font-size-title-xl);
-    }
-}
