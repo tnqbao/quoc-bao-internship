@@ -16,7 +16,7 @@
     --font-size-h3: 1.4375rem;
     --font-size-highlight: 2.1875rem;
     --font-size-content: 1.125rem;
-    --font-size-button: 1.0625rem;
+    --font-size-button: 0.875rem;
     --font-size-label: 1rem;
     --font-size-link: 0.875rem;
 
@@ -25,7 +25,9 @@
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 4rem;
+
     --radius-lg: 2rem;
+    --radius-xxl : 6.25rem;
 
     --label-spacing-inline: 20%;
     --label-spacing-none: 0;
@@ -91,8 +93,11 @@ button {
     font-weight: var(--font-weight-title);
     line-height: var(--line-height-title);
     color: var(--color-fifty);
+    border-radius: var(--radius-xxl);
     cursor: pointer;
     border: 1px;
+    display: flex;
+    gap: 0.5rem;
 }
 
 button:hover {

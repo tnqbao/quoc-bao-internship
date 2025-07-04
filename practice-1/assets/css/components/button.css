@@ -18,7 +18,7 @@
 .secondary-btn {
     background: var(--bg-secondary);
     color: var(--color-primary);
-    font-size: var(--font-size-text-md);
+    font-size: var(--font-size-button);
     font-weight: var(--font-weight-title);
 }
 

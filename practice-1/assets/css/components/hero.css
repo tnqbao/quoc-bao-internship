@@ -1,21 +1,18 @@
-.hero {
+#hero {
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
+    padding: 2rem 0;
 }
 
-.hero h1 {
-    font-size: var(--font-size-title-lg);
-    word-break: break-word
-}
-
-.hero .highlight-pink {
+#hero .highlight-pink {
     color: var(--color-secondary);
     font-weight: var(--font-weight-title)
 }
 
 .hero-content {
     flex-basis: 30%;
+    text-align: center;
     text-wrap: auto;
     gap: 2rem;
 }
@@ -59,13 +56,32 @@
     flex-direction: column;
 }
 
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .hero-content .pair-btn {
     flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+
+#hero-cta button {
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+#get-started-btn{
+    box-shadow: 0 2rem .5rem var(--color-shadow);
 }
 
 @media (min-width: 768px) {
-    .hero {
+    #hero {
         gap: 4rem;
+        padding: 4rem 0;
     }
 
     .hero-content {
@@ -73,8 +89,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
-        gap: 43px;
     }
 
     .hero-images {
@@ -103,11 +117,6 @@
         flex-direction: column;
     }
 
-    .hero h1 {
-        font-size: var(--font-size-title-xl);
-        word-break: break-word
-    }
-
     .hero-content {
         text-align: center;
     }
@@ -117,20 +126,22 @@
         align-items: center;
     }
 
-    .hero-content .pair-btn button {
+    #hero-cta button {
         padding: 1rem 2rem;
+        width: 30%;
     }
 
 }
 
 @media (min-width: 1080px) {
-    .hero {
+    #hero {
         flex-direction: row-reverse;
         justify-content: flex-end;
     }
 
-    .hero-images {
-        padding: 0 0;
+    #hero-cta button {
+        padding: 1rem 2rem;
+        width: 100%;
     }
 
 }
@@ -139,4 +150,6 @@
     .hero-images {
         padding: 2rem 6rem;
     }
+
+
 }

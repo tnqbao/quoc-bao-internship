@@ -42,7 +42,7 @@
     </div>
 </header>
 <main>
-    <section id="hero" class="container flex-column">
+    <section id="hero" class="container flex">
         <div class="hero-images">
             <div class="gallery flex">
                 <div class="left">
@@ -57,34 +57,35 @@
                         <img src="assets/img/girl-sitting-on-mountain.jpg" alt="Sea and Sand" loading="lazy"/>
                     </picture>
                 </div>
-                <picture >
+                <picture>
                     <source srcset="assets/img/girl-taking-photo.jpg" media="(max-width: 768px)"/>
                     <source srcset="assets/img/girl-taking-photo.webp" media="(min-width: 768px)"/>
                     <img class="right" src="assets/img/girl-taking-photo.jpg" alt="Girl taking photo"/>
                 </picture>
             </div>
         </div>
-        <div class="hero-content section-content flex-column flex-center">
-            <div class="explore-badge flex-center"> Explore the world!
-                <img src="./assets/img/bag.svg" alt="hero icon" class="hero-icon"/>
+        <div class="hero-content flex flex-column flex-center">
+            <div id="hero-text">
+                <div class="explore-badge flex flex-center"> Explore the world!
+                    <img src="./assets/img/bag.svg" alt="hero icon" id="hero-icon"/>
+                </div>
+                <h1>
+                    Travel <span>top</span><br/>
+                    <span class="highlight-pink">destination</span> of the world
+                </h1>
+                <p> We always make our customer happy by providing
+                    as many choices as possible </p>
             </div>
-            <h1>
-                Travel <span class="highlight-pink">top</span><br/>
-                <span class="highlight-pink">destination</span> of the world
-            </h1>
-            <p> We always make our customer happy by providing
-                as many choices as possible </p>
-            <div class="pair-btn">
-                <button class="flex-center">
+            <div class="pair-btn" id="hero-cta">
+                <button id="get-started-btn" class="flex-center">
                     Get Started
                 </button>
-                <button class="secondary-btn flex-center gap-1" aria-label="Watch demo">
+                <button id="demo-btn" class="secondary-btn flex-center gap-1" aria-label="Watch demo">
                     <img src="./assets/img/play.svg" alt="play icon" class="play-icon"/>
                     Watch Demo
                 </button>
             </div>
         </div>
-
     </section>
     <section class="partner container flex">
         <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener">
