@@ -1,0 +1,117 @@
+.top-destination {
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+.top-destination .pair-btn {
+    justify-content: space-between;
+    flex: 1;
+}
+
+.top-destination-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.top-destination-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.top-destination-cards .card {
+    display: block;
+    text-align: start;
+    justify-content: flex-start;
+    padding: 0 !important;
+    border: 1px solid var(--color-border);
+    text-wrap: wrap;
+    box-shadow: 0 2rem .5rem var(--color-shadow);
+}
+
+.top-destination-cards img,
+.card-image img {
+    aspect-ratio: 12.675 / 10;
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.top-destination-cards .top-des-info,
+.top-destination-cards .card-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    text-align: left;
+}
+
+.top-destination-cards .top-des-description {
+    text-align: start;
+}
+
+.price {
+    color: var(--color-secondary) !important;
+    font-size: var(--font-size-text-lg);
+    font-weight: 600;
+}
+
+.rating {
+    color: #ff5722;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    text-align: start;
+    justify-content: flex-end;
+}
+
+@media (min-width: 768px) {
+    .top-destination .pair-btn {
+        justify-content: center;
+    }
+    .top-destination-cards {
+        gap: 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top-destination-cards .card {
+        flex: 1;
+    }
+
+    .top-destination-cards .card img {
+        aspect-ratio: 8.75 / 10;
+    }
+
+
+}
+
+@media (min-width: 1080px) {
+    .top-destination {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top-destination .pair-btn {
+        justify-content: flex-end;
+    }
+
+    .top-destination-contents {
+        flex-direction: row;
+    }
+    .top-destination-cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .top-destination-cards .card img {
+        aspect-ratio: 10.65 / 10;
+    }
+}

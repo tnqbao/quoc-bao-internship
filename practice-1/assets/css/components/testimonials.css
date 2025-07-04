@@ -1,0 +1,139 @@
+.testimonials {
+    text-align: center;
+    gap: 4rem;
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonials-content {
+    gap: 2rem;
+}
+
+.testimonials .section-content {
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    text-align: center
+}
+
+.bottom-btn {
+    display: flex;
+    width: 100%;
+}
+
+.side-btn {
+    display: none;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem;
+    border-radius: 50%;
+    background-color: #fecd57;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover
+}
+
+h5 .highlight {
+    color: #ff5722;
+    font-weight: 700
+}
+
+.stars {
+    color: gold;
+    font-size: 26.67px;
+    margin-bottom: 1rem
+}
+
+.testimonial-content p {
+    font-size: var(--font-size-text-lg)
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: .5rem
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #1918250D;
+    border-radius: 50%
+}
+
+.dot.active {
+    background-color: #f85e9f
+}
+
+@media (min-width: 768px) {
+    .testimonials {
+        padding: 4rem 0;
+        flex-direction: row;
+    }
+
+    .bottom-btn {
+        display: none;
+    }
+
+    .side-btn {
+        display: flex;
+        height: auto;
+    }
+
+    .testimonials .section-content {
+        gap: 0;
+    }
+
+    .testimonial-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .avatar img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    .testimonials {
+        padding: 4rem 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .testimonial-content {
+        max-width: 800px;
+    }
+
+    .avatar {
+        width: 200px;
+        height: 200px;
+    }
+
+    .avatar img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .side-btn {
+        height: 6.25rem;
+    }
+}

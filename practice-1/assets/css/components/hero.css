@@ -1,0 +1,156 @@
+#hero {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+#hero .highlight-pink {
+    color: var(--color-secondary);
+    font-weight: var(--font-weight-title);
+    font-size: var(--font-size-h1);
+}
+
+.hero-content {
+    flex-basis: 30%;
+    text-align: center;
+    text-wrap: auto;
+    gap: 2rem;
+}
+
+.hero-content .explore-badge {
+    color: var(--color-secondary);
+    background-color: var(--color-fifty);
+    padding: 1rem 2rem;
+    gap: 1rem
+}
+
+.hero-images {
+    align-items: center;
+    background-image: url("../../img/hero-background.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+}
+
+.hero-images .gallery {
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center
+}
+
+.gallery img {
+    margin-top: 2rem;
+    width: 139px;
+    height: 154px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1)
+}
+
+.right {
+    height: 205px !important;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.hero-content .pair-btn {
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+
+#hero-cta button {
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+
+#get-started-btn{
+    box-shadow: 0 2rem .5rem var(--color-shadow);
+}
+
+@media (min-width: 768px) {
+    #hero {
+        gap: 4rem;
+        padding: 4rem 0;
+    }
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-images {
+        padding: 4rem 0;
+    }
+
+    .hero-images .gallery {
+        align-self: flex-start;
+    }
+
+    .gallery img {
+        margin-top: 2rem;
+        width: 272px;
+        height: 300px;
+        border-radius: 20px;
+        object-fit: cover;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .1)
+    }
+
+    .right {
+        height: 400px !important;
+    }
+
+    .left {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+    .hero-content .pair-btn {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #hero-cta button {
+        padding: 1rem 2rem;
+        width: 30%;
+    }
+
+}
+
+@media (min-width: 1080px) {
+    #hero {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+
+    #hero-cta button {
+        padding: 1rem 2rem;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1300px) {
+    .hero-images {
+        padding: 2rem 6rem;
+    }
+
+
+}

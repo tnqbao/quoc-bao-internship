@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A travel website showcasing top destinations, services, and features.">
+    <title> Practice 1 </title>
+    <link rel="icon" href="./assets/img/logo.svg" type="image/svg+xml">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<header class="navbar flex container">
+    <div class="menu-button">
+        <button class="menu-toggle-btn flex-center">
+            <img src="./assets/img/menu-toggle-btn.svg" alt="menu icon"/>
+        </button>
+    </div>
+    <div class="logo flex">
+        <img src="./assets/img/logo.svg" alt="Travlog logo"/>
+        <p> Travlog </p>
+    </div>
+    <nav>
+        <ul class="nav-links flex list">
+            <li>
+                <a href="#" class="active"> Home </a>
+            </li>
+            <li>
+                <a href="#services"> Discover </a>
+            </li>
+            <li>
+                <a href="#top-destination"> Special Deals </a>
+            </li>
+            <li>
+                <a href="#footer"> Contact </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="pair-btn">
+        <button class="secondary-btn">Login</button>
+        <button>Sign Up</button>
+    </div>
+</header>
+<main>
+    <section id="hero" class="container flex">
+        <div class="hero-images">
+            <div class="gallery flex">
+                <div class="left">
+                    <picture>
+                        <source srcset="assets/img/path-and-beach.jpg" media="(max-width: 768px)"/>
+                        <source srcset="assets/img/path-and-beach.webp" media="(min-width: 768px)"/>
+                        <img src="assets/img/path-and-beach.jpg" alt="Path and Beach" loading="lazy"/>
+                    </picture>
+                    <picture>
+                        <source srcset="assets/img/girl-sitting-on-mountain.jpg" media="(max-width: 768px)"/>
+                        <source srcset="assets/img/the-girl-sit-on-mountain.webp" media="(min-width: 768px)"/>
+                        <img src="assets/img/girl-sitting-on-mountain.jpg" alt="Sea and Sand" loading="lazy"/>
+                    </picture>
+                </div>
+                <picture>
+                    <source srcset="assets/img/girl-taking-photo.jpg" media="(max-width: 768px)"/>
+                    <source srcset="assets/img/girl-taking-photo.webp" media="(min-width: 768px)"/>
+                    <img class="right" src="assets/img/girl-taking-photo.jpg" alt="Girl taking photo"/>
+                </picture>
+            </div>
+        </div>
+        <div class="hero-content flex flex-column flex-center">
+            <div id="hero-text">
+                <div class="explore-badge flex flex-center"> Explore the world!
+                    <img src="./assets/img/bag.svg" alt="hero icon" id="hero-icon"/>
+                </div>
+                <h1>
+                    Travel <span class="highlight-pink">top </span><br/> <span
+                        class="highlight-pink">destination </span>
+                    of the world
+                </h1>
+                <p> We always make our customer happy by providing
+                    as many choices as possible </p>
+            </div>
+            <div class="pair-btn" id="hero-cta">
+                <button id="get-started-btn" class="flex-center">
+                    Get Started
+                </button>
+                <button id="demo-btn" class="secondary-btn flex-center gap-1" aria-label="Watch demo">
+                    <img src="./assets/img/play.svg" alt="play icon" class="play-icon"/>
+                    Watch Demo
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="partner container flex">
+        <a href="https://www.tripadvisor.com/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-1.svg" alt="tripadvisor logo"/>
+        </a>
+        <a href="https://www.expedia.com.vn/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-2.svg" alt="partner logo 2"/>
+        </a>
+        <a href="https://www.booking.com/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-3.svg" alt="booking logo"/>
+        </a>
+        <a href="https://www.airbnb.com/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-4.svg" alt="airbnb logo"/>
+        </a>
+        <a href="https://www.orbitz.com/" target="_blank" rel="noopener">
+            <img src="./assets/img/partner-5.svg" alt="orbitz logo"/>
+        </a>
+    </section>
+    <section class="services container flex" id="services">
+        <div class="services-content">
+            <span> Services </span>
+            <h2> Our top value categories for you </h2>
+        </div>
+        <div class="flex services-cards">
+            <div class="card">
+                <img src="./assets/img/service-destination.svg" alt="Best tour guild"/>
+                <div class="card-content flex-column flex-center">
+                    <h3> Best Tour Guide </h3>
+                    <p> What looked like a small patch of purple grass, above five feet. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/service-booking.svg" alt="Easy booking"/>
+                <div class="card-content flex-column flex-center">
+                    <h3> Easy Booking </h3>
+                    <p> Square, was moving across the sand in their direction. </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./assets/img/service-cloudy.png" alt="Weather Forecast"/>
+                <div class="card-content flex-column flex-center">
+                    <h3> Weather Forecast </h3>
+                    <p> What looked like a small patch of purple grass, above five feet. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="top-destination container flex-column" id="top-destination">
+        <div class="flex top-destination-contents">
+            <div class="section-content flex">
+                <span class="section-title">Top Destination</span>
+                <h3>Explore top destination</h3>
+            </div>
+            <div class="pair-btn">
+                <button class="secondary-btn navigation-btn flex-center" aria-label="Previous destination">
+                    <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
+                </button>
+                <button class="navigation-btn flex-center" aria-label="Next destination">
+                    <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
+                </button>
+            </div>
+        </div>
+        <section class="top-destination-cards">
+            <article class="card">
+                <figure class="card-image">
+                    <img src="./assets/img/top-destination-1.jpg" alt="Ocean with full of Colors, Maldives">
+                </figure>
+                <div class="card-content">
+                    <div>
+                        <h6 class="card-title">Paradise Beach, Bantayan Island</h6>
+                        <p class="location">Rome, Italy</p>
+                        <h6 class="price">$550.16</h6>
+                    </div>
+                    <h6 class="rating">
+                        4.5 ★
+                    </h6>
+                </div>
+            </article>
+            <article class="card">
+                <figure>
+                    <img src="./assets/img/top-destination-2.jpg" alt="Ocean colorful image"/>
+                    <figcaption class="top-des-info flex-column">
+                        <div>
+                            <h6>Ocean with full of Colors</h6>
+                            <p>Maldives</p>
+                            <p class="price">$20.99</p>
+                        </div>
+                        <h6 class="rating">4.5 ★</h6>
+                    </figcaption>
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                    <img src="./assets/img/top-destination-3.jpg" alt="Mountain view image"/>
+                    <figcaption class="top-des-info flex-column">
+                        <div>
+                            <h6>Mountain View, Above the cloud</h6>
+                            <p>United Arab Emirates</p>
+                            <h6 class="price">$150.99 </h6>
+                        </div>
+                        <h6 class="rating">5 ★</h6>
+                    </figcaption>
+                </figure>
+            </article>
+        </section>
+    </section>
+    <section class="travel-point flex-column container">
+        <img src="./assets/img/travel-point.png" alt="Travel point background"/>
+        <div class="travel-point-content flex-column">
+            <section class="section-content flex">
+                <span class="section-title"> Travel Point </span>
+                <h3>We helping you find your dream location</h3>
+                <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical Latin literature from 45 BC. </p>
+            </section>
+            <div class="grid-1">
+                <div>
+                    <h4> 500+ </h4>
+                    <p> Holiday Package </p>
+                </div>
+                <div>
+                    <h4> 100 </h4>
+                    <p> Luxury Hotel </p>
+                </div>
+                <div>
+                    <h4> 7 </h4>
+                    <p> Premium Airline </p>
+                </div>
+                <div>
+                    <h4> 2k+ </h4>
+                    <p> Happy customer </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="key-features container flex">
+        <img class="key-features-image" src="assets/img/key-features.png" alt="key features image"/>
+        <div class="key-features-content">
+            <div class="section-content flex">
+                <span class="section-title">Key Features</span>
+                <h3>We offer best services</h3>
+                <p>
+                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                    classical
+                    Latin literature from 45 BC.
+                </p>
+            </div>
+            <ul class="features-list">
+                <li>
+                    <div class="feature-item" id="location">
+                        <div class="icon" style="background-color: #FF5722;">
+                            <img src="assets/img/key-feature-location.svg" alt="Location">
+                        </div>
+                        <div class="text">
+                            <h6>We offer best services</h6>
+                            <p>Lorem Ipsum is not simply random text</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-item" id="schedule">
+                        <div class="icon" style="background-color: #FFD233;">
+                            <img src="assets/img/key-feature-schedule.svg" alt="Schedule">
+                        </div>
+                        <div class="text">
+                            <h6>Schedule your trip</h6>
+                            <p>It has roots in a piece of classical</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="feature-item" id="coupons">
+                        <div class="icon" style="background-color: #FF66C3;">
+                            <img src="assets/img/key-feature-coupons.svg" alt="Coupon">
+                        </div>
+                        <div class="text">
+                            <h6>Get discounted coupons</h6>
+                            <p>Lorem Ipsum is not simply random text</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="testimonials container flex">
+        <button class="secondary-btn navigation-btn flex-center side-btn" aria-label="Previous testimonial">
+            <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
+        </button>
+        <div class="flex-column testimonials-content">
+            <div class="section-content flex-center">
+                <span class="section-title">Testimonials</span>
+                <h3>Trust our clients</h3></div>
+            <div class="avatar">
+                <img src="./assets/img/testimonials.jpg" alt="Mark Smith"/>
+            </div>
+            <h5><span class="highlight">Mark Smith</span> / Travel Enthusiast</h5>
+
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                classical Latin literature from 45 BC.
+            </p>
+            <div class="dots">
+                <span class="dot"></span>
+                <span class="dot active"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="flex pair-btn bottom-btn">
+            <button class="secondary-btn navigation-btn flex-center" aria-label="Previous testimonial">
+                <img src="./assets/img/arrow-left.svg" alt="left arrow icon"/>
+            </button>
+            <button class="navigation-btn flex-center" aria-label="Next testimonial">
+                <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
+            </button>
+        </div>
+        <button class="navigation-btn flex-center side-btn" aria-label="Next testimonial">
+            <img src="./assets/img/arrow-right.svg" alt="right arrow icon"/>
+        </button>
+    </section>
+    <section class="subscribe-newsletter container flex-center flex-column" title="Subscribe to our newsletter">
+        <div class="section-content flex-column">
+            <span class="section-title">subscribe to our newsletter</span>
+            <h2>Prepare yourself & let’s explore the beauty of the world</h2>
+        </div>
+        <form action="#" class="email-form ">
+            <div class="input-wrapper">
+                <img src="./assets/img/email-icon.svg" alt="email icon" class="email-icon"/>
+                <label>
+                    <input type="email" placeholder="Your Email" required/>
+                </label>
+            </div>
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>
+    </section>
+</main>
+<footer id="footer" class="container">
+    <section class="about-company">
+        <div class="logo flex">
+            <img src="./assets/img/logo.svg" alt="logo image"/>
+            <p class="logo-name">Travlog</p>
+        </div>
+        <p class="description">
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+            Latin
+            literature from 45 BC.
+        </p>
+        <div class="social-icons flex">
+            <a href="#"><img src="./assets/img/facebook.svg" alt="facebook icon"/></a>
+            <a href="#"><img src="./assets/img/twitter.svg" alt="twitter icon"/></a>
+            <a href="#"><img src="./assets/img/instagram.svg" alt="instagram icon"/></a>
+        </div>
+    </section>
+
+    <section class="footer-links">
+        <details>
+            <summary>
+                <h6> Company</h6>
+                <img src="assets/img/dropdown-button.svg" alt="dropdown icon" class="dropdown-icon"/>
+
+            </summary>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Mobile</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>
+                <h6> Contact Us</h6>
+                <img src="assets/img/dropdown-button.svg" alt="dropdown icon" class="dropdown-icon"/>
+
+            </summary>
+            <ul>
+                <li><a href="#">Why Travlog?</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">FAQ’s</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </details>
+
+        <details>
+            <summary>
+                <h6> Meet Up</h6>
+                <img src="assets/img/dropdown-button.svg" alt="dropdown icon" class="dropdown-icon"/>
+
+            </summary>
+            <ul>
+                <li><a href="#">+00 92 1234 56789</a></li>
+                <li><a href="#">info@travlog.com</a></li>
+                <li><a href="#">205. R Street, New York</a></li>
+                <li><a href="#">BD23200</a></li>
+            </ul>
+        </details>
+        <table class="footer-links-table">
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Meet Us</th>
+            </tr>
+            <tr>
+                <td><a href="#">About</a></td>
+                <td><a href="#">Why Travlog?</a></td>
+                <td><a href="#">+00 92 1234 56789</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Careers</a></td>
+                <td><a href="#">Contact Us</a></td>
+                <td><a href="#">info@travlog.com</a></td>
+            </tr>
+            <tr>
+                <td><a href="#">Mobile</a></td>
+                <td><a href="#">FAQ’s</a></td>
+                <td><a href="#">205. R Street, New York</a></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><a href="#">Blog</a></td>
+                <td><a href="#">BD23200</a></td>
+            </tr>
+        </table>
+    </section>
+</footer>
+</body>
+</html>
